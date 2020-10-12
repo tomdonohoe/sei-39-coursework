@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .plum {
+      background-color: plum;
+    }
+    .salmon {
+      background-color: salmon;
+    }
+
+    .linen {
+      background-color: linen;
+    }
+
+    .skyblue {
+      background-color: skyblue;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+    nav a {
+        text-decoration: none;
+        text-align: center;
+        border-right: 1px solid black ;    
+    }
+
+    nav a:last-child {
+        border-right: none;
+    }
+
+
+    @media screen and (min-width: 700px) {
+        nav {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <a href="">one</a>
+        <a href="">two</a>
+        <a href="">three</a>
+        <a href="">four</a>
+    </nav>
+    <main>
+        <div class="plum">plum</div>
+        <div class="grid-container">
+            <div class="salmon">salmon</div>
+            <div class="linen">linen</div>
+        </div>    
+        <div class="skyblue">skyblue</div>
+    </main>
+</body>
+</html>

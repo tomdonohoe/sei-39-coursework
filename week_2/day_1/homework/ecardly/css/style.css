@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 0;
+    background-color: lightgray;
+}
+
+main {
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+}
+
+aside {
+    background-color: white;
+    width: 100%;
+}
+
+footer {
+    padding: 40px 0px;
+    display: grid;
+    justify-content: center;
+}
+
+article {
+    padding-bottom: 30px;
+}
+
+header {
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat-x;
+    margin-bottom: 30px;
+}
+
+a {
+    color: orange;
+}
+
+.top-strap {
+    display: grid;
+    justify-content: center;
+}
+
+.top-strap img {
+    width: 100%;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto; 
+    gap: 2%;
+    
+}
+
+.content-container img {
+    width: 100%;
+}
+
+.article-meta {
+    border-top: 1px dotted black;
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+}
+
+.sidebar-links {
+    font-weight: bold;
+    font-size: small;
+}
+
+.sidebar-links ul {
+    padding-left: 0;
+}
+
+.sidebar-links li {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.sidebar-content {
+    padding: 15px;
+} 
+
+.sidebar-empty {
+    background-color: lightgray;
+}
+
+.ads img {
+    padding-bottom: 10px;
+}

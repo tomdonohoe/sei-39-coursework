@@ -1,0 +1,5 @@
+.completed-item {
+    text-decoration: line-through;
+    font-size: 10px;
+    color: gray;
+}

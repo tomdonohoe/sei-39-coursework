@@ -1,0 +1,10 @@
+Q1:
+- 1
+Q2:
+- 1
+Q3:
+- ["plant", "apple"]
+Q4:
+- ["Orange", "Apple", "Mango"]
+Q5:
+- null

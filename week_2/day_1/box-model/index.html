@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Display rule - block, inline, inline-block */
+        * {
+            box-sizing: border-box;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20%;
+        }
+
+        .one {
+            background-color:red;
+        }
+        
+        .two {
+            background-color: mistyrose;
+        }
+
+        .three {
+            background-color: green;
+        }
+
+        .four {
+            background-color: gold;
+        }
+
+        header {
+            background-color: plum;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <!-- CSS grid -->
+    <div class="grid-container">
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+        <div class="four">four</div>
+    </div>
+</body>
+</html>

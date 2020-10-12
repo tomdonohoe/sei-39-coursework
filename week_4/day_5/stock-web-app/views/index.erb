@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Stock app</h1>
+    <p>welcome to my sotck app. wish i bought more stocks.</p>
+    <h2>Stock prices</h2>
+    <ul>
+    <li><a href="/stock?ticker=aapl">See apple stocks</a></li>    
+    <li><a href="/stock?ticker=msft">See microsoft stocks</a></li>
+    <li><a href="/stock?ticker=tsla">See tesla stocks</a></li>
+    </ul>
+
+    <form action="http://localhost:4567/stock" method="get">
+        <label for="">ticker name</label>
+        <input type="text" name="ticker">  <%# name defines the key in query string. value is the input %>
+        <button>get price</button>
+    </form>
+</body>
+</html>

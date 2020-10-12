@@ -1,0 +1,38 @@
+/*  My Styles */
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    color: dimgray;
+}
+
+p {
+    color: dimgray;
+    font-size: small;
+}
+
+.site-logo {
+    padding: 20px 0px;
+}
+
+.article-meta {
+    color: blue;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.press {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.press img {
+    width: 100%;
+    border: 10px solid lightgray;
+}
+
+/*  DT's Styles */

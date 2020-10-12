@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/pattern1.png");
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header {
+    background-color: #ff8a80;
+    color: white;
+    padding: 1% 2%;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+footer {
+    background-color:#ff8a80;
+    color: white;
+    height: 80px;
+    text-align: right;
+    padding: 10px;
+}
+
+/* footer p {
+    padding: 20px;
+} */
+
+.container {
+    width: 100%;
+    background-color: #fff;
+}
+
+.content-container {
+    padding: 2%;
+}
+
+.hero-image img {
+    width: 100%;
+    display: block;
+}
+
+.tagline {
+    color: black;
+    text-transform: uppercase;
+}
+
+.photo-gallary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.photo-gallary img {
+    width: 100%;
+    padding: 1px;
+    border: 2px solid lightgrey;
+}
+

@@ -1,0 +1,30 @@
+/* Tag Selector */
+h1 {
+    color: red;
+}
+
+h2 {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Class Selector */
+.about {
+     background-color: hotpink;
+}
+
+/* ID Selector */
+#last {
+    color: goldenrod;
+}
+
+/* Descendant Selector */
+.interests p {
+    background-color: mistyrose;
+}
+
+/* Direct child Selector */
+.interests > p {
+    background-color: papayawhip;
+}

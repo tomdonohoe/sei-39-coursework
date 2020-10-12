@@ -1,0 +1,19 @@
+h1 {
+    font-family: "Comic Sans MS";
+    color: hotpink;
+    text-transform: uppercase;
+}
+
+input {
+    padding: 10px;
+    border: 4px dotted lightsalmon;
+
+}
+
+button {
+    padding: 15px;
+    background-color: hotpink;
+    color: white;
+    font-weight: bold;
+    border: none;
+}

@@ -1,0 +1,28 @@
+command line interface
+======================
+
+- pwd
+- cd 
+- mkdir
+- touch
+- rm
+- rmdir (if directory empty)
+- rm -r (remvoe directory when full)
+- mv
+
+- history (shows all cmds youve entered)
+
+command flags/switches arguments
+
+shortcuts:
+
+- up and down arrow keys to move to previous command.
+- use tab for auto complete
+
+
+special characters
+
+root === /
+current directory === .
+home directory === ~
+
