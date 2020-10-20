@@ -1,0 +1,12 @@
+<h1>details for <%= dish_details['name'] %></h1>
+<p>posted by: <%= user['email']%></p>
+
+<img src="<%= dish_details['image_url'] %>" alt="">
+
+<form action="/dishes/<%= dish_details['id'] %>" method="post">
+    <input type="hidden" name="_method" value="delete">  <%# this is from sinatra to understand get request %>
+    <button>delete this dish</button>
+</form>
+
+
+<a href="/dishes/<%= dish_details['id'] %>/edit">edit</a>

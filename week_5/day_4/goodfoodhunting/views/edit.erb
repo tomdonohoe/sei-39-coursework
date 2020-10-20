@@ -1,0 +1,14 @@
+<h1>Edit dish <%= dish_details['name']%></h1>
+
+<form action="/dishes/<%= dish_details['id']%>" method="post">
+    <input type="hidden" name="_method" value="patch">
+
+    <label for="">name</label>
+    <input type="text" name="name" value="<%= dish_details['name']%>">
+
+    <label for="">image url</label>
+    <input type="text" name="image" value="<%= dish_details['image_url']%>">
+
+    <button>update</button>
+
+</form>
