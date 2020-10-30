@@ -30,8 +30,30 @@ def get_all_dishes
 end
 
 
+def get_all_users
+  results = run_sql "SELECT * FROM users;"
+  results
+end
+
+
+def get_all_comments 
+  results = run_sql "SELECT * FROM comments;"
+  results
+end
+
+def get_all_comments_by_dish_id dish_id 
+  results = run_sql "SELECT * FROM comments WHERE dish_id = $1;", [dish_id]
+  results
+end
+
+
 def create_dish name, image, user_id
   run_sql "INSERT INTO dishes (name, image_url, user_id) VALUES ($1, $2, $3);", [name, image, user_id]
+end
+
+
+def create_comment content, dish_id, user_id
+  run_sql "INSERT INTO comments (content, dish_id, user_id) VALUES ($1, $2, $3);", [content, dish_id, user_id]
 end
 
 

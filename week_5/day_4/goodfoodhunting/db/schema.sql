@@ -22,3 +22,12 @@ CREATE TABLE users (
 
 ALTER TABLE dishes ADD COLUMN user_id INTEGER;
 UPDATE TABLE dishes SET user_id = 2;
+
+
+CREATE TABLE comments (
+    id SERIAL PRIMARY KEY,
+    content TEXT,
+    dish_id INTEGER NOT NULL,
+    user_id INTEGER NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE -- delete comments if user is deleted.
+);

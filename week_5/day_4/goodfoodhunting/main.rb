@@ -38,11 +38,12 @@ end
 
 get '/dishes/:id' do # : is a wild card and id is a variable and is accessed in params
   dish_details = find_dish_by_id params['id']
-  user = find_user_by_id dish_details['user_id']
-
+  user = find_user_by_id dish_details['user_id']  
+  comments = get_all_comments_by_dish_id params['id']
   erb :details, locals: {
     dish_details: dish_details,
-    user: user
+    user: user,
+    comments: comments
   }
 end
 
@@ -98,4 +99,11 @@ end
 delete '/logout' do
   session[:user_id] = nil
   redirect '/login'
+end
+
+post '/comments' do
+  if current_user['id']
+    create_comment params['content'], params['dish_id'], current_user['id']
+  end
+  redirect back
 end
